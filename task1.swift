@@ -1,3 +1,14 @@
+// Design a Student and Mentor class for an online course platform.
+
+// Each student may or may not have a mentor assigned.
+// Every mentor can optionally have a specialization.
+// A student can attempt to fetch the mentor's specialization.
+// Only students with non-empty names and valid ages (>=10) should be allowed.
+// The method getMentorSpecialization() should return the specialization if it exists.
+// Use optional binding to safely unwrap optional values
+// Use optional chaining to get the mentor specialization it is exists
+
+
 // class Mentor {
 
 //     var name: String

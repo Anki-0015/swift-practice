@@ -66,5 +66,4 @@ for user in testUsers {
     case .invalidEmail:
         print("Invalid email provided.")
     }
-    print("none")
 }

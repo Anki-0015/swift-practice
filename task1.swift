@@ -9,6 +9,12 @@
 // Use optional chaining to get the mentor specialization it is exists
 
 
+
+
+
+
+
+
 // class Mentor {
 
 //     var name: String
@@ -94,7 +100,7 @@ let student1 = Student(name: "", age: 12, mentor: Mentor(specialization: "iOS"))
 let student2 = Student(name: "Ankit", age: 15, mentor: Mentor(specialization: "iOS"))
 let student3 = Student(name: "john", age: 9, mentor: Mentor(specialization: nil))
 
-if let student = student2 {
+if let student = student1 {
 
     if let specialization = student.getMentorSpecialization() {
         print("\(student.name)'s mentor specializes in \(specialization).")
@@ -105,4 +111,12 @@ if let student = student2 {
 } 
 else {
     print("Student could not be created.")
+    
+}
+
+
+if let specialization = student2?.getMentorSpecialization() {
+    print(specialization)
+} else {
+    print("Student2 could not be created or has no mentor specialization.")
 }
